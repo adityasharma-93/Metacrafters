@@ -1,9 +1,5 @@
-// Create a variable to hold the number of NFTs
-let numNFTs = 0;
 
-// This function will take in some values as parameters, create an
-// NFT object using the parameters passed to it for its metadata,
-// and store it in the variable above.
+let numNFTs = 0;
 function mintNFT(name, description, image) {
   const nft = {
     name: name,
@@ -14,7 +10,6 @@ function mintNFT(name, description, image) {
   return nft;
 }
 
-// Create an array to store the minted NFTs
 let nfts = [];
 
 // This function will list all the NFTs' metadata
@@ -27,12 +22,10 @@ function listNFTs() {
   }
 }
 
-// This function will return the total number of minted NFTs
 function getTotalSupply() {
   return numNFTs;
 }
 
-// Call the functions
 const nft1 = mintNFT("NFT 1", "Description 1", "image1.jpg");
 const nft2 = mintNFT("NFT 2", "Description 2", "image2.jpg");
 
